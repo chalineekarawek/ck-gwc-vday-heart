@@ -1,0 +1,70 @@
+/* Basic page style resets */
+* {
+  box-sizing: border-box;
+  --amaranth: rgb(241, 156, 187);
+}
+
+#card-background{
+   width: 100vw;
+  height: 100vh;
+  background-color: var(--amaranth);
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: center;
+}
+/*bottom*/
+.heart-base{ /*for class, use dot*/
+  background-color: pink;
+  display: inline-block;
+  position: absolute;
+  height: 300px;
+  transform: rotate(-45deg);
+  width: 300px;
+}
+
+.heart-bump{
+  content: "";
+    background-color: pink;
+    border-radius: 50%;
+    height: 300px;
+    position: absolute;
+    width: 300px;
+}
+
+.heart-bump-left{
+  top: -140px;
+}
+
+.heart-bump-right{
+  left: 140px;
+}
+
+/* Larger heart */
+.heart-outer{
+  height: 340px;
+  width: 340px;
+  background-color: red;
+}
+
+.heart-outer-curve{
+  height: 340px;
+  width: 340px;
+  background-color: red;
+}
+
+
+.heart-outer-curve-left{
+  top: -170px;
+}
+
+.heart-outer-curve-right{
+  left: 170px;
+}
+
+#heart-message{
+  z-index: 100;
+  color: white;
+  position: absolute;
+  top: 40%;
+}
